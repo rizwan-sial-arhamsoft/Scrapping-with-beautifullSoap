@@ -31,18 +31,18 @@ for da in data:
 """
 if you want to access the details of all the pages uncomment the section below
 """
-# count = 0
-# for link in links:
-#     if not link.index("/web/20201201053628/"):
-#         links_2.append(link[20:])
-#     elif link.index("/web/20201201053628/"):
-#         links_3.append(link)
-#
-# links_2.extend(links_3)
-# print(links_2, len(links_2))
-#
-# for li in links_2:
-#     page = rq.get(li)
-#     print(page)
-#     soup = bc(page.content, 'lxml')
+count = 0
+for link in links:
+    if not link.index("/web/20201201053628/"):
+        links_2.append(link[20:])
+    elif link.index("/web/20201201053628/"):
+        links_3.append(link)
+
+links_2.extend(links_3)
+print(links_2, len(links_2))
+
+for li in links_2:
+    page = rq.get(li)
+    print(page)
+    soup = bc(page.content, 'lxml')
 
