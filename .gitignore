@@ -125,5 +125,12 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+*.idea/vcs.xml
+*.idea/modules.xml
+*.idea/misc.xml
+*.idea/inspectionProfiles/profiles_settings.xml
+*.idea/inspectionProfiles/Project_Default.xml
+*.idea/Scrapping-with-beautifullSoap.iml
+*.idea/.gitignore
 # Pyre type checker
 .pyre/
